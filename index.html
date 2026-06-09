@@ -20,10 +20,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo_text">
-            <i class="fa-solid fa-robot"></i>
-            <p>LandyBot</p>
-        </div>
+        <img src="img/logo_text.png" class="logo" alt="logo">
         <div class="nav_buttons">
             <a href="#funciones">Funciones</a>
             <a href="#funcionamiento">Cómo funciona</a>
@@ -58,7 +55,7 @@
             </div>
         </div>
         <div class="h_p2">
-            <img src="img/robot.jpg" alt="landybot">
+            <img src="img/LandyBot.png" alt="landybot">
             <div class="sombra_robot"></div>
         </div>
     </header>
@@ -67,38 +64,38 @@
             <p class="up_title">TODO LO QUE PUEDES PERSONALIZAR</p>
             <p class="title_big">Una suscripción, un catálogo completamente tuyo</p>
 
-            <div class="features">
-                <div class="feature">
+            <div class="features reveal-on-scrolls">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-palette"></i>
                     <b>Identidad de tu marca</b>
                     <p class="desc">Combina tu identidad visual con tu catálogo, con control total de colores e imagenes.</p>
                 </div>
 
-                <div class="feature">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-pen"></i>
                     <b>Tus textos</b>
                     <p class="desc">Edita cada descripción y eslogan para que tus clientes te reconozcan.</p>
                 </div>
 
-                <div class="feature">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <b>Añade productos ilimitados</b>
                     <p class="desc">Añade tantas categorías y productos como quieras. Reordenalos con diseños simples.</p>
                 </div>
 
-                <div class="feature">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-tags"></i>
                     <b>Ofertas y cupones</b>
                     <p class="desc">Crea cupones de descuento para fidelizar a tus clientes. Genera ofertas irresistibles.</p>
                 </div>
 
-                <div class="feature">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-clock"></i>
                     <b>Cambios instantáneos</b>
                     <p class="desc">Cambia descripciones, precios, nombres, recarga la página y ahí estarán. Rápido y eficaz.</p>
                 </div>
 
-                <div class="feature">
+                <div class="feature reveal-on-scroll">
                     <i class="fa-solid fa-qrcode"></i>
                     <b>Acceso a QR</b>
                     <p class="desc">Tus clientes podrán escanear un QR directo a tu página.</p>
@@ -107,7 +104,7 @@
         </section>
 
         <section id="como_funciona">
-            <div class="s_p1">
+            <div class="s_p1 reveal-on-scroll">
                 <p class="up_title">Intenta ahora</p>
                 <p class="title_big">Haz cambios y mira tu catálogo actualizarse</p>
                 <p class="desc">Elige un color de marca y nombre abajo. Con Landy Bot no debes esperar para ver cambios.</p>
@@ -133,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="s_p2">
+            <div class="s_p2 reveal-on-scroll">
                 <!-- NUEVO: Celular simulado -->
                 <div class="celular_simulado" style="--color-dinamico: #8a2be2;">
                     <div class="celular_header">
@@ -190,17 +187,17 @@
             <p class="up_title_center">COMO FUNCIONA</p>
             <p class="title_big_center">En marcha en 3 simples pasos</p>
             <div class="steps">
-                <div class="step">
+                <div class="step reveal-on-scroll">
                     <p>01</p>
                     <b>Suscribete y reclama tu catálogo</b>
                     <p class="desc">Elige un plan y obtén tu propio privado sistema. Cancela cuando quieras.</p>
                 </div>
-                <div class="step">
+                <div class="step reveal-on-scroll">
                     <p>02</p>
                     <b>Personaliza todo</b>
                     <p class="desc">Añade tus productos, precios, fotos, colores y escribe tus descripciones.</p>
                 </div>
-                <div class="step">
+                <div class="step reveal-on-scroll">
                     <p>03</p>
                     <b>Comparte tu QR</b>
                     <p class="desc">Imprime y comparte tu código QR para que puedan acceder a tu página.</p>
@@ -214,7 +211,7 @@
             
             <div class="contenedor_planes">
                 <!-- Plan Básico -->
-                <div class="plan_tarjeta">
+                <div class="plan_tarjeta reveal-on-scroll">
                     <div class="plan_header">
                         <h3>Plan Básico</h3>
                         <div class="plan_precio">
@@ -229,14 +226,14 @@
                         <li><span class="check">✓</span> 1 catálogo digital</li>
                         <li><span class="check">✓</span> Acceso a código QR</li>
                         <li><span class="check">✓</span> 3 cambios mensuales</li>
-                        <li><span class="check">✓</span> Hasta 20 productos</li>
+                        <li><span class="check">✓</span> Hasta 30 productos</li>
                     </ul>
                     
                     <button class="btn_plan">Comenzar Ahora</button>
                 </div>
 
                 <!-- Plan Premium (Destacado) -->
-                <div class="plan_tarjeta destacado">
+                <div class="plan_tarjeta reveal-on-scroll destacado">
                     <div class="etiqueta_popular">Más Popular</div>
                     <div class="plan_header">
                         <h3>Plan Premium</h3>
@@ -266,19 +263,28 @@
             <p class="title_big_center">¿Tienes dudas? Aquí te las respondemos</p>
 
             <div class="contenedor_faq">
-                <!-- Pregunta 1 -->
-                <div class="faq_item">
+
+                <div class="faq_item reveal-on-scroll ">
+                    <button class="faq_pregunta">
+                        <span>¿Como comprarán mis clientes?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Tus clientes entrarán a tu página y añadirán los productos que quieran a su carrito. Luego, seleccionarán método de pago y entrega. La plataforma les preparará el pedido en un mensaje de WhatsApp y los llevará hacia tú numero para que envíen su pedido.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item reveal-on-scroll ">
                     <button class="faq_pregunta">
                         <span>¿Necesito saber de tecnología para usarlo?</span>
                         <i class="fa-solid fa-plus"></i>
                     </button>
                     <div class="faq_respuesta">
-                        <p>Para nada. LandyBot está diseñado justamente para que cualquier persona pueda usarlo sin dolores de cabeza. Si sabes mandar un mensaje por WhatsApp, sabes usar nuestra plataforma. Es ultra fácil, intuitivo y no necesitas tocar una sola línea de código.</p>
+                        <p>Para nada. LandyBot está diseñado justamente para que cualquier persona pueda usarlo sin dolores de cabeza. Si sabes un poco de Excel, sabes usar nuestra plataforma. Es ultra fácil, intuitivo y no necesitas tocar una sola línea de código.</p>
                     </div>
                 </div>
 
-                <!-- Pregunta 2 -->
-                <div class="faq_item">
+                <div class="faq_item reveal-on-scroll">
                     <button class="faq_pregunta">
                         <span>¿Puedo actualizar los precios yo mismo?</span>
                         <i class="fa-solid fa-plus"></i>
@@ -288,8 +294,7 @@
                     </div>
                 </div>
 
-                <!-- Pregunta 3 -->
-                <div class="faq_item">
+                <div class="faq_item reveal-on-scroll">
                     <button class="faq_pregunta">
                         <span>¿Puedo cancelar mi suscripción cuando quiera?</span>
                         <i class="fa-solid fa-plus"></i>
@@ -299,8 +304,7 @@
                     </div>
                 </div>
 
-                <!-- Pregunta 4 -->
-                <div class="faq_item">
+                <div class="faq_item reveal-on-scroll">
                     <button class="faq_pregunta">
                         <span>¿Cómo me suscribo para empezar?</span>
                         <i class="fa-solid fa-plus"></i>
@@ -318,10 +322,7 @@
         <div class="footer_container">
             <!-- Columna 1: Branding y Redes -->
             <div class="footer_col brand_col">
-                <div class="logo_text">
-                    <i class="fa-solid fa-robot"></i>
-                    <p>LandyBot</p>
-                </div>
+                <img src="img/logo_text.png" style="width: 50%;" class="logo" alt="logo">
                 <p class="footer_brand_desc">Moderniza tu negocio hoy. Crea, personaliza y comparte tu catálogo digital en segundos.</p>
                 <div class="footer_socials">
                     <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>

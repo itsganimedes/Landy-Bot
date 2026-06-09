@@ -52,8 +52,8 @@ nav a:hover::after{
         padding: 1.2rem 1rem;
     }
 
-    .logo_text {
-        font-size: 1.2rem;
+    .logo {
+        width: 40%;
     }
 
     .nav_buttons {

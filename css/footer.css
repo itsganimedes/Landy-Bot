@@ -1,0 +1,156 @@
+/* --- Estilos del Footer Global --- */
+.footer_landy {
+    background-color: #110724; /* Un tono muy oscuro derivado de tu color de texto para el fondo */
+    color: #f5effa; /* Texto claro legible para fondo oscuro */
+    padding: 4rem var(--padding_general) 1.5rem var(--padding_general);
+    font-family: sans-serif; /* O la fuente global que uses */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Columnas genéricas */
+.footer_col {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Columna de Marca específica */
+.brand_col .logo_text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.brand_col .logo_text i {
+    color: var(--primario); /* Mantiene tu morado de marca brillante */
+}
+
+.footer_brand_desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #b09ec4; /* Grisáceo suave para no competir con el título */
+}
+
+/* Redes Sociales */
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer_socials a {
+    color: #f5effa;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.footer_socials a:hover {
+    background-color: var(--primario);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Columnas de Enlaces */
+.footer_col h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+/* Pequeña línea decorativa debajo de los títulos del footer */
+.footer_col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primario);
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer_links a {
+    color: #b09ec4;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+/* Pequeños iconos de flecha en los enlaces */
+.footer_links a i {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    transition: transform 0.2s;
+}
+
+.footer_links a:hover {
+    color: #fff;
+}
+
+.footer_links a:hover i {
+    transform: translateX(3px);
+    color: var(--primario);
+    opacity: 1;
+}
+
+/* --- Barra de Copyright Inferior --- */
+.footer_bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.footer_bottom p {
+    font-size: 0.85rem;
+    color: #796690;
+    margin: 0;
+}
+
+/* --- Responsive Adaptable --- */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .footer_col {
+        width: 100%;
+    }
+}

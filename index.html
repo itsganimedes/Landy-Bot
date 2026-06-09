@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandyBot</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <nav>
+        <div class="logo_text">
+            <i class="fa-solid fa-robot"></i>
+            <p>LandyBot</p>
+        </div>
+        <div class="nav_buttons">
+            <a href="#funciones">Funciones</a>
+            <a href="#funcionamiento">Cómo funciona</a>
+            <a href="#planes">Planes</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <a href="#funciones" class="styled_button">Comenzar</a>
+    </nav>
+    <header>
+        <div class="h_p1">
+            <p class="tag"><i class="fa-solid fa-wand-sparkles"></i> &nbsp; Sin código. Innovación.</p>
+            <h1>Catálogo digital <span>personalizable</span>, ultra <span>fácil</span> y <span>rápido</span></h1>
+            <p class="desc">Introduce la modernidad a tu negocio para que puedas compartir tus productos sin enviar decenas de fotos. Actualiza datos en segundos desde tu celular. Maneja colores, textos, imágenes.
+            </p>
+            <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
+                <a href="#planes" class="styled_button_2">Ir ahora</a>
+                <a href="#funcionamiento" class="styled_button_3">Información</a>
+            </div>
+            <div class="h_stats">
+                <div class="h_stat">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Sencillo</p>
+                </div>
+                <div class="h_stat">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <p>Personalizable</p>
+                </div>
+                <div class="h_stat">
+                    <i class="fa-solid fa-coins"></i>
+                    <p>Económico</p>
+                </div>
+            </div>
+        </div>
+        <div class="h_p2">
+            <img src="img/robot.jpg" alt="landybot">
+            <div class="sombra_robot"></div>
+        </div>
+    </header>
+    <main>
+        <section id="funciones">
+            <p class="up_title">TODO LO QUE PUEDES PERSONALIZAR</p>
+            <p class="title_big">Una suscripción, un catálogo completamente tuyo</p>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-solid fa-palette"></i>
+                    <b>Identidad de tu marca</b>
+                    <p class="desc">Combina tu identidad visual con tu catálogo, con control total de colores e imagenes.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-pen"></i>
+                    <b>Tus textos</b>
+                    <p class="desc">Edita cada descripción y eslogan para que tus clientes te reconozcan.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <b>Añade productos ilimitados</b>
+                    <p class="desc">Añade tantas categorías y productos como quieras. Reordenalos con diseños simples.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-tags"></i>
+                    <b>Ofertas y cupones</b>
+                    <p class="desc">Crea cupones de descuento para fidelizar a tus clientes. Genera ofertas irresistibles.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-clock"></i>
+                    <b>Cambios instantáneos</b>
+                    <p class="desc">Cambia descripciones, precios, nombres, recarga la página y ahí estarán. Rápido y eficaz.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <b>Acceso a QR</b>
+                    <p class="desc">Tus clientes podrán escanear un QR directo a tu página.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como_funciona">
+            <div class="s_p1">
+                <p class="up_title">Intenta ahora</p>
+                <p class="title_big">Haz cambios y mira tu catálogo actualizarse</p>
+                <p class="desc">Elige un color de marca y nombre abajo. Con Landy Bot no debes esperar para ver cambios.</p>
+                
+                <!-- NUEVO: Selector de Nombre y Colores -->
+                <div class="selector_personalizacion">
+                    <div class="grupo_input">
+                        <label for="input_nombre">Nombre de la marca</label>
+                        <input type="text" id="input_nombre" placeholder="Mi Marca" value="Landy Bot">
+                    </div>
+                    
+                    <div class="grupo_input">
+                        <label>Color principal</label>
+                        <div class="contenedor_colores">
+                            <!-- Puedes cambiar estos HEX por los que prefieras -->
+                            <button type="button" class="circulo_color activo" data-color="#8a2be2" style="background-color: #8a2be2;"></button>
+                            <button type="button" class="circulo_color" data-color="#ff4757" style="background-color: #ff4757;"></button>
+                            <button type="button" class="circulo_color" data-color="#2ed573" style="background-color: #2ed573;"></button>
+                            <button type="button" class="circulo_color" data-color="#1e90ff" style="background-color: #1e90ff;"></button>
+                            <button type="button" class="circulo_color" data-color="#ffa500" style="background-color: #ffa500;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s_p2">
+                <!-- NUEVO: Celular simulado -->
+                <div class="celular_simulado" style="--color-dinamico: #8a2be2;">
+                    <div class="celular_header">
+                        <span id="celular_marca">Landy Bot</span>
+                    </div>
+                    
+                    <div class="celular_contenido">
+                        <!-- Producto 1 -->
+                        <div class="producto_item">
+                            <img src="https://picsum.photos/id/102/50/50" alt="Hamburguesa" class="producto_img">
+                            <div class="producto_info">
+                                <span class="producto_nombre">Hamburguesa Clásica</span>
+                                <span class="producto_categoria">Hamburguesas</span>
+                            </div>
+                            <span class="producto_precio">$12</span>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="producto_item">
+                            <img src="https://picsum.photos/id/514/50/50" alt="Papas" class="producto_img">
+                            <div class="producto_info">
+                                <span class="producto_nombre">Papas Fritas Grandes</span>
+                                <span class="producto_categoria">Acompañamientos</span>
+                            </div>
+                            <span class="producto_precio">$5</span>
+                        </div>
+                        <!-- Producto 3 -->
+                        <div class="producto_item">
+                            <img src="https://picsum.photos/id/431/50/50" alt="Pizza" class="producto_img">
+                            <div class="producto_info">
+                                <span class="producto_nombre">Pizza Pepperoni</span>
+                                <span class="producto_categoria">Pizzas</span>
+                            </div>
+                            <span class="producto_precio">$15</span>
+                        </div>
+                        <!-- Producto 4 -->
+                        <div class="producto_item">
+                            <img src="https://picsum.photos/id/429/50/50" alt="Malteada" class="producto_img">
+                            <div class="producto_info">
+                                <span class="producto_nombre">Malteada de Fresa</span>
+                                <span class="producto_categoria">Bebidas</span>
+                            </div>
+                            <span class="producto_precio">$6</span>
+                        </div>
+                    </div>
+
+                    <div class="celular_order">
+                        <span>Pedir ahora</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionamiento">
+            <p class="up_title_center">COMO FUNCIONA</p>
+            <p class="title_big_center">En marcha en 3 simples pasos</p>
+            <div class="steps">
+                <div class="step">
+                    <p>01</p>
+                    <b>Suscribete y reclama tu catálogo</b>
+                    <p class="desc">Elige un plan y obtén tu propio privado sistema. Cancela cuando quieras.</p>
+                </div>
+                <div class="step">
+                    <p>02</p>
+                    <b>Personaliza todo</b>
+                    <p class="desc">Añade tus productos, precios, fotos, colores y escribe tus descripciones.</p>
+                </div>
+                <div class="step">
+                    <p>03</p>
+                    <b>Comparte tu QR</b>
+                    <p class="desc">Imprime y comparte tu código QR para que puedan acceder a tu página.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="planes">
+            <p class="up_title_center">PRECIOS</p>
+            <p class="title_big_center">Elige el plan ideal para tu negocio</p>
+            
+            <div class="contenedor_planes">
+                <!-- Plan Básico -->
+                <div class="plan_tarjeta">
+                    <div class="plan_header">
+                        <h3>Plan Básico</h3>
+                        <div class="plan_precio">
+                            <span class="moneda">$</span>
+                            <span class="monto">2.99</span>
+                            <span class="periodo">/ mes</span>
+                        </div>
+                        <p class="plan_frase">Ideal para comenzar a digitalizar tu negocio.</p>
+                    </div>
+                    
+                    <ul class="plan_caracteristicas">
+                        <li><span class="check">✓</span> 1 catálogo digital</li>
+                        <li><span class="check">✓</span> Acceso a código QR</li>
+                        <li><span class="check">✓</span> 3 cambios mensuales</li>
+                        <li><span class="check">✓</span> Hasta 20 productos</li>
+                    </ul>
+                    
+                    <button class="btn_plan">Comenzar Ahora</button>
+                </div>
+
+                <!-- Plan Premium (Destacado) -->
+                <div class="plan_tarjeta destacado">
+                    <div class="etiqueta_popular">Más Popular</div>
+                    <div class="plan_header">
+                        <h3>Plan Premium</h3>
+                        <div class="plan_precio">
+                            <span class="moneda">$</span>
+                            <span class="monto">4.99</span>
+                            <span class="periodo">/ mes</span>
+                        </div>
+                        <p class="plan_frase">Todo lo que necesitas para escalar al máximo.</p>
+                    </div>
+                    
+                    <ul class="plan_caracteristicas">
+                        <li><span class="check">✓</span> 2 catálogos digitales</li>
+                        <li><span class="check">✓</span> Personalización completa</li>
+                        <li><span class="check">✓</span> 6 cambios mensuales</li>
+                        <li><span class="check">✓</span> Productos ilimitados</li>
+                        <li><span class="check">✓</span> Soporte prioritario</li>
+                    </ul>
+                    
+                    <button class="btn_plan btn_destacado">Adquirir Premium</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <p class="up_title_center">PREGUNTAS FRECUENTES</p>
+            <p class="title_big_center">¿Tienes dudas? Aquí te las respondemos</p>
+
+            <div class="contenedor_faq">
+                <!-- Pregunta 1 -->
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        <span>¿Necesito saber de tecnología para usarlo?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Para nada. LandyBot está diseñado justamente para que cualquier persona pueda usarlo sin dolores de cabeza. Si sabes mandar un mensaje por WhatsApp, sabes usar nuestra plataforma. Es ultra fácil, intuitivo y no necesitas tocar una sola línea de código.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        <span>¿Puedo actualizar los precios yo mismo?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>¡Sí, totalmente! Ese es el punto principal de tener un catálogo inteligente. Puedes cambiar precios, nombres, descripciones o fotos desde tu celular o computadora en segundos. El cambio se actualiza al instante para todos tus clientes.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        <span>¿Puedo cancelar mi suscripción cuando quiera?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Sí, no tienes ninguna permanencia obligatoria. Si decides darte de baja, solo nos envías un mensaje simple por WhatsApp avisándonos y cancelamos tu plan de inmediato sin vueltas, cobros raros ni preguntas incómodas.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        <span>¿Cómo me suscribo para empezar?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Es sencillísimo: ve a la sección de planes de arriba y presiona el botón del plan que prefieras. Eso te abrirá un chat directo con nosotros, los desarrolladores. Coordinamos el pago y listo: tendrás tu catálogo completamente personalizado y funcionando en menos de 2 días.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer_landy">
+        <div class="footer_container">
+            <!-- Columna 1: Branding y Redes -->
+            <div class="footer_col brand_col">
+                <div class="logo_text">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>LandyBot</p>
+                </div>
+                <p class="footer_brand_desc">Moderniza tu negocio hoy. Crea, personaliza y comparte tu catálogo digital en segundos.</p>
+                <div class="footer_socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Navegación Interna -->
+            <div class="footer_col links_col">
+                <h4>Navegación</h4>
+                <div class="footer_links">
+                    <a href="#funciones"><i class="fa-solid fa-chevron-right"></i> Funciones</a>
+                    <a href="#como_funciona"><i class="fa-solid fa-chevron-right"></i> Pruébalo</a>
+                    <a href="#funcionamiento"><i class="fa-solid fa-chevron-right"></i> Cómo funciona</a>
+                    <a href="#planes"><i class="fa-solid fa-chevron-right"></i> Planes</a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Soporte / Legal -->
+            <div class="footer_col links_col">
+                <h4>Soporte</h4>
+                <div class="footer_links">
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i> Preguntas frecuentes</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i> Términos de servicio</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i> Privacidad</a>
+                    <a href="mailto:soporte@landybot.com"><i class="fa-solid fa-envelope"></i> Contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior de copyright -->
+        <div class="footer_bottom">
+            <p>&copy; 2026 LandyBot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

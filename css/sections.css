@@ -1,0 +1,647 @@
+.styled_button{
+    text-decoration: none;
+    color: #eee;
+    background: var(--primario);
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+/* MAS PADDING */
+
+.styled_button_2{
+    text-decoration: none;
+    color: #eee;
+    background: var(--primario);
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+/* COLOR DEL FONDO */
+
+.styled_button_3{
+    text-decoration: none;
+    color: var(--texto);
+    background: var(--fondo);
+    border: 1px solid var(--primario);
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.styled_button:hover, .styled_button_2:hover{
+    background: var(--fondo);
+    color: var(--primario);
+}
+
+.styled_button_3:hover{
+    background: var(--primario);
+    color: var(--fondo);
+}
+
+
+/* --- */
+
+.tag{
+    border: 1px solid var(--primario);
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    color: #222222;
+}
+
+.tag i{
+    color: var(--primario);
+}
+
+
+/* --- SECCIONES --- */
+
+section{
+    padding: 4rem var(--padding_general);
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature{
+    width: 30%;
+    height: 15rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.feature i{
+    color: var(--primario);
+    font-size: 1.2rem;
+    background: var(--primario_menor);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 24px;
+}
+
+.feature:hover{
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+
+.feature:hover i{
+    background: var(--primario);
+    color: var(--fondo);
+}
+
+.feature b{
+    font-size: 1.2rem;
+}
+
+
+/* --- PARTE INTERACTIVA DEL CELULAR ---*/
+
+/* --- Estructura General de la Sección --- */
+#como_funciona {
+    display: flex;
+    gap: var(--padding_general);
+    padding: var(--padding_general);
+    background-color: var(--fondo);
+    color: var(--texto);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.s_p1, .s_p2 {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* --- Formulario de Personalización (Parte 1) --- */
+.selector_personalizacion {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.grupo_input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.grupo_input label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.grupo_input input[type="text"] {
+    padding: 0.6rem;
+    border: 1px solid var(--primario_menor);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.grupo_input input[type="text"]:focus {
+    border-color: var(--primario);
+}
+
+.contenedor_colores {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.circulo_color {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.circulo_color:hover {
+    transform: scale(1.1);
+}
+
+.circulo_color.activo {
+    border-color: var(--texto);
+}
+
+/* --- Celular Simulado (Parte 2) --- */
+.celular_simulado {
+    width: 100%;
+    max-width: 310px; /* Tamaño compacto para que no se vea gigante */
+    height: 500px;
+    border: 10px solid #222; /* Borde que simula el teléfono */
+    border-radius: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Header y Footer usan la variable CSS dinámica inline `--color-dinamico` */
+.celular_header {
+    background-color: var(--color-dinamico);
+    color: #fff;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.celular_order {
+    background-color: var(--color-dinamico);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    width: 90%;
+    border-radius: 14px;
+    margin: 1rem auto;
+    text-align: center; 
+    font-size: 0.75rem;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.celular_contenido {
+    flex: 1;
+    overflow-y: auto; /* Por si añades más productos */
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Estilos de la lista de productos */
+.producto_item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #eee;
+}
+
+.producto_img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #ddd;
+}
+
+.producto_info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.producto_nombre {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--texto);
+}
+
+.producto_categoria {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.producto_precio {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--texto);
+}
+
+
+
+/* --- STEPS --- */
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--texto);
+    width: 100%;
+}
+
+.step p:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem 1rem;
+    flex: 1;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+    height: 15rem;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--primario);
+}
+
+.step b{
+    font-size: 1.5rem;
+}
+
+
+
+
+/* --- PLANES ---- */
+
+/* --- Sección de Planes --- */
+#planes {
+    padding: var(--padding_general);
+    background-color: var(--fondo);
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor_planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* Hace que ambas tarjetas tengan exactamente el mismo alto */
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px; /* Evita que las tarjetas se estiren demasiado hacia los lados */
+    margin-top: 2.5rem;
+}
+
+/* --- Tarjeta de Plan Individual --- */
+.plan_tarjeta {
+    background-color: #fff;
+    border: 1px solid var(--primario_menor);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    flex: 1; /* Ambas toman el mismo ancho proporcional */
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el botón siempre hacia abajo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan_tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Variación Plan Destacado ($4.99) --- */
+.plan_tarjeta.destacado {
+    border-color: var(--primario);
+    box-shadow: 0 8px 24px rgba(138, 43, 226, 0.15); /* Sombra suave con tu color primario */
+}
+
+.plan_tarjeta.destacado:hover {
+    box-shadow: 0 12px 28px rgba(138, 43, 226, 0.25);
+}
+
+/* Etiqueta flotante para el plan destacado */
+.etiqueta_popular {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primario);
+    color: #fff;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- Elementos Internos --- */
+.plan_header h3 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    color: var(--texto);
+}
+
+.plan_precio {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.plan_precio .moneda {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.plan_precio .monto {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--texto);
+}
+
+.plan_precio .periodo {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 0.2rem;
+}
+
+.plan_frase {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Lista de características */
+.plan_caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.plan_caracteristicas li {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--texto);
+}
+
+.plan_caracteristicas .check {
+    color: var(--primario);
+    font-weight: bold;
+}
+
+/* --- Botones --- */
+.btn_plan {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--primario);
+    color: var(--primario);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn_plan:hover {
+    background-color: var(--primario_menor);
+}
+
+.btn_plan.btn_destacado {
+    background-color: var(--primario);
+    color: #fff;
+    border: none;
+    padding: 1rem; /* Un pelín más grande para resaltar */
+}
+
+.btn_plan.btn_destacado:hover {
+    background-color: rgb(110, 30, 185); /* Un tono más oscuro de tu morado para el hover */
+}
+
+
+
+/* --- FAQ --- */
+
+/* --- Sección FAQ --- */
+#faq {
+    padding: var(--padding_general);
+    background-color: var(--fondo);
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor_faq {
+    width: 100%;
+    max-width: 700px; /* Ancho ideal para lectura cómoda */
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq_item {
+    background-color: #fff;
+    border: 1px solid var(--primario_menor);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s;
+}
+
+/* El botón que contiene la pregunta */
+.faq_pregunta {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--texto);
+    gap: 1rem;
+    transition: background-color 0.2s;
+}
+
+.faq_pregunta:hover {
+    background-color: rgba(138, 43, 226, 0.03); /* Un toque sutil de tu morado */
+}
+
+/* El icono del más (+) */
+.faq_pregunta i {
+    color: var(--primario);
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor de la respuesta (oculto por defecto) */
+.faq_respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Animación de apertura suave */
+    background-color: #fafafc;
+}
+
+.faq_respuesta p {
+    padding: 0 1.5rem 1.2rem 1.5rem;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Clases de activación (Controladas por JS) --- */
+.faq_item.activo {
+    border-color: var(--primario);
+}
+
+.faq_item.activo .faq_pregunta i {
+    transform: rotate(45deg); /* Convierte el "+" en una "x" al abrirse */
+}
+
+
+/* --- Responsive para Celulares --- */
+@media (max-width: 768px) {
+    .contenedor_planes {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .plan_tarjeta {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .styled_button, 
+    .styled_button_2, 
+    .styled_button_3 {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #como_funciona {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .s_p1, .s_p2 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .step {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .contenedor_planes {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .plan_tarjeta {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .contenedor_faq {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .faq_pregunta {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .faq_respuesta p {
+        padding: 0 1rem 1rem 1rem;
+        font-size: 0.9rem;
+    }
+}
